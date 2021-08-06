@@ -46,23 +46,25 @@ function getCookie(cname) {
   return false;
 }
 
-// Dark mode handling
-
+// Dark mode handling - DEPRECATED
+/*
 var darkModeBtn = document.getElementById('darkMode');
 var mainStyle = document.getElementById('main-style');
 darkModeBtn.addEventListener('click', function() {
   if (!getCookie('darkMode') || getCookie('darkMode') == 0) {
     document.cookie = "darkMode=1";
-    mainStyle.href = "bulma-dark.css";
+    mainStyle.href = "assets/bulma-dark.css";
   }
   else {
     document.cookie = "darkMode=0";
-    mainStyle.href = "bulma.css";
+    mainStyle.href = "assets/bulma.css";
   }
 });
+// check cookie onload()
 function checkCookie(cname) {
   if (getCookie('darkMode') == 1) {
-    mainStyle.href = "bulma-dark.css";
+    mainStyle.href = "assets/bulma-dark.css";
   }
   else {}
 }
+*/

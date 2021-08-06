@@ -6644,6 +6644,17 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
+.section.is-light {
+  background-color: whitesmoke;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+main.content-area {
+  padding: 40px 40px 20px 40px
+}
+
+
 .panel {
   border-radius: 6px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);

@@ -31,7 +31,7 @@
         The CRC
       </a>
       <a href="about" class="navbar-item">
-        Robot
+        Our Robot
       </a>
       <a href="about" class="navbar-item">
         The game
@@ -70,9 +70,11 @@
           <a href="<?php echo 'fr/', $pageFr; ?>" class="button is-light">
             Fran&ccedil;ais
           </a>
+          <!--
           <a id="darkMode" class="button is-dark">
             <i class="far fa-moon"></i>
           </a>
+          -->
         </div>
       </div>
     </div>
