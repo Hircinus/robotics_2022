@@ -6651,7 +6651,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 main.content-area {
-  padding: 40px 40px 20px 40px
+  padding: 40px 40px 20px 40px;
+  display: none
+}
+main.content-area.show {
+  display: block
 }
 
 

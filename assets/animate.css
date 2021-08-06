@@ -49,6 +49,50 @@
    animation-name: bounceIn;
  }
 
+ @keyframes fadeInUp {
+   from {
+     opacity: 0;
+     transform: translate3d(0, 100%, 0);
+   }
+
+   to {
+     opacity: 1;
+     transform: translate3d(0, 0, 0);
+   }
+ }
+
+ .fadeInUp {
+   animation-name: fadeInUp;
+ }
+
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
+
+   to {
+     opacity: 1;
+   }
+ }
+
+ .fadeIn {
+   animation-name: fadeIn;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root {
   --animate-duration: 1s;
   --animate-delay: 1s;

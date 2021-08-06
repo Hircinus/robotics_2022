@@ -5,11 +5,11 @@
   <link rel="stylesheet" type="text/css" href="assets/animate.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
-<body onload="checkCookie('darkMode')">
+<body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand bounceIn">
-    <a class="navbar-item" href="">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    <a class="navbar-item" href="home">
+      <img src="assets/logo.png">
     </a>
 
     <a role="button" class="navbar-burger" id='navbar-toggle' aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

@@ -27,6 +27,27 @@ navbarToggles.forEach(el => {
     navbarDropdowns[target].classList.toggle("show");
   })
 });
+// For tabs in main pages
+var tabBtns = document.getElementsByClassName('tab-btn');
+// convert previous HTMLCollection to array
+var tabBtns = Array.from(tabBtns);
+var contentAreas = document.getElementsByClassName('content-area');
+tabBtns.forEach(el => {
+  el.addEventListener('click', () => {
+    const target = parseInt(el.dataset.target);
+    for (i=0; i<tabBtns.length; i++) {
+      if (i == target) {
+        continue;
+      }
+      if (tabBtns[i].parentElement.classList.contains('is-active') && contentAreas[i].classList.contains('show')) {
+        tabBtns[i].parentElement.classList.remove('is-active');
+        contentAreas[i].classList.remove("show");
+      }
+    }
+    tabBtns[target].parentElement.classList.toggle('is-active');
+    contentAreas[target].classList.toggle("show");
+  })
+});
 // Cookie functions
 function getCookie(cname) {
   var cookies = document.cookie;
