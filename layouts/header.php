@@ -36,7 +36,7 @@
       <a href="about" class="navbar-item">
         The game
       </a>
-      <div class="navbar-item has-dropdown" data-target="0">
+      <div id="dropdownBox" class="navbar-item has-dropdown" data-target="0">
         <a class="navbar-link">
           Team
         </a>
@@ -63,6 +63,7 @@
       <a href="about" class="navbar-item">
         Media
       </a>
+    </div>
     </div>
     <div class="navbar-end">
       <div class="navbar-item">

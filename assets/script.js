@@ -27,6 +27,20 @@ navbarToggles.forEach(el => {
     navbarDropdowns[target].classList.toggle("show");
   })
 });
+for (k=0; k<navbarToggles.length; k++) {
+
+}
+window.addEventListener('click', function(e){
+  if (document.getElementById('dropdownBox').contains(e.target)){
+    // Clicked in box
+  } else{
+    // Clicked outside the box
+    for (i=0; i<navbarLinks.length; i++) {
+      navbarLinks[i].classList.remove('open');
+      navbarDropdowns[i].classList.remove("show");
+    }
+  }
+});
 // For tabs in main pages
 var tabBtns = document.getElementsByClassName('tab-btn');
 // convert previous HTMLCollection to array

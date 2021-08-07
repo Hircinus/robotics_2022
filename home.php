@@ -32,7 +32,7 @@ require 'layouts/header.php'; ?>
   </div>
 </section>
 
-<main class="content-area show">
+<main class="content-area fadeInUp show">
   <div class="columns">
     <div class="column is-full">
       <div class="content">
@@ -57,7 +57,7 @@ require 'layouts/header.php'; ?>
     </div>
   </div>
 </main>
-<main class="content-area">
+<main class="content-area fadeInUp">
   <div class="columns">
     <div class="column is-full">
       <div class="content">
@@ -82,7 +82,7 @@ require 'layouts/header.php'; ?>
     </div>
   </div>
 </main>
-<main class="content-area">
+<main class="content-area fadeInUp">
   <div class="columns">
     <div class="column is-full">
       <div class="content">
