@@ -21,19 +21,19 @@
 
   <div id="navbar-menu" class="navbar-menu">
     <div class="navbar-start">
-      <a href="index" class="navbar-item">
+      <a href="home" class="navbar-item">
         Home
       </a>
       <a href="about" class="navbar-item">
         About
       </a>
-      <a href="about" class="navbar-item">
+      <a href="crc" class="navbar-item">
         The CRC
       </a>
-      <a href="about" class="navbar-item">
+      <a href="robot" class="navbar-item">
         Our Robot
       </a>
-      <a href="about" class="navbar-item">
+      <a href="game" class="navbar-item">
         The game
       </a>
       <div id="dropdownBox" class="navbar-item has-dropdown" data-target="0">
@@ -42,25 +42,25 @@
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
+          <a href="team#robot" class="navbar-item">
             Robot team
           </a>
-          <a class="navbar-item">
+          <a href="team#kiosk" class="navbar-item">
             Kiosk Team
           </a>
-          <a class="navbar-item">
+          <a href="team#web" class="navbar-item">
             Webjournalism team
           </a>
-          <a class="navbar-item">
+          <a href="team#video" class="navbar-item">
             Video team
           </a>
           <hr class="navbar-divider">
-          <a class="navbar-item">
+          <a href="team#mentor" class="navbar-item">
             Mentors & mentions
           </a>
         </div>
       </div>
-      <a href="about" class="navbar-item">
+      <a href="media" class="navbar-item">
         Media
       </a>
     </div>

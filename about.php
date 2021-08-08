@@ -1,15 +1,15 @@
 <?php
-$pageFr = 'accueil';
+$pageFr = 'a_propos';
 require 'layouts/header.php'; ?>
 
-<section class="hero is-info is-large has-text-left">
+<section class="hero is-link is-medium has-text-left">
   <div class="hero-body">
     <div class="">
       <p class="title">
-        CRC Robotics 2022
+        About Us
       </p>
       <p class="subtitle">
-        A clean slate
+        Who are we?
       </p>
     </div>
   </div>
@@ -18,13 +18,13 @@ require 'layouts/header.php'; ?>
       <div class="container">
         <ul>
           <li class="is-active">
-            <a class="tab-btn" data-target="0">Overview</a>
+            <a class="tab-btn" data-target="0">Our school</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="1">Sponsors</a>
+            <a class="tab-btn" data-target="1">Something</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="2">Contact Us</a>
+            <a class="tab-btn" data-target="2">Something again</a>
           </li>
         </ul>
       </div>
@@ -36,7 +36,7 @@ require 'layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>Overview</h1>
+        <h1>Our school</h1>
         <hr>
       </div>
     </div>

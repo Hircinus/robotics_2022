@@ -6633,6 +6633,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 /* CUSTOM CSS */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar-menu .has-dropdown .navbar-dropdown {
   display: none!important
 }
@@ -6688,6 +6692,23 @@ main.content-area.show {
 
 .fadeInDown {
   animation: fadeInDown 0.3s ease;
+}
+
+.back-to-top {
+  display: none;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+  position: fixed;
+  opacity: 0;
+  bottom: 50px;
+  right: 50px;
+  transition: opacity 0.25s ease;
+  background-color: #fff;
+}
+.back-to-top.show {
+  display: block;
+  opacity: 1;
 }
 
 
