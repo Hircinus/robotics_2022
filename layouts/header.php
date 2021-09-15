@@ -42,20 +42,20 @@
         </a>
 
         <div class="navbar-dropdown">
-          <a href="team#robot" class="navbar-item">
+          <a href="team#robot" class="navbar-item checkHash">
             Robot team
           </a>
-          <a href="team#kiosk" class="navbar-item">
+          <a href="team#kiosk" class="navbar-item checkHash">
             Kiosk Team
           </a>
-          <a href="team#web" class="navbar-item">
+          <a href="team#web" class="navbar-item checkHash">
             Webjournalism team
           </a>
-          <a href="team#video" class="navbar-item">
+          <a href="team#video" class="navbar-item checkHash">
             Video team
           </a>
           <hr class="navbar-divider">
-          <a href="team#mentor" class="navbar-item">
+          <a href="team#mentor" class="navbar-item checkHash">
             Mentors & mentions
           </a>
         </div>

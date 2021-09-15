@@ -2,7 +2,7 @@
 $pageFr = 'accueil';
 require 'layouts/header.php'; ?>
 
-<section class="hero is-info is-large has-text-left">
+<section class="hero is-info is-medium has-text-left">
   <div class="hero-body">
     <div class="">
       <p class="title">

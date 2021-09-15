@@ -27,9 +27,6 @@ navbarToggles.forEach(el => {
     navbarDropdowns[target].classList.toggle("show");
   })
 });
-for (k=0; k<navbarToggles.length; k++) {
-
-}
 window.addEventListener('click', function(e){
   if (document.getElementById('dropdownBox').contains(e.target)){
     // Clicked in box
@@ -46,22 +43,51 @@ var tabBtns = document.getElementsByClassName('tab-btn');
 // convert previous HTMLCollection to array
 var tabBtns = Array.from(tabBtns);
 var contentAreas = document.getElementsByClassName('content-area');
+checkWindowHash();
 tabBtns.forEach(el => {
   el.addEventListener('click', () => {
-    const target = parseInt(el.dataset.target);
-    for (i=0; i<tabBtns.length; i++) {
-      if (i == target) {
-        continue;
-      }
-      if (tabBtns[i].parentElement.classList.contains('is-active') && contentAreas[i].classList.contains('show')) {
-        tabBtns[i].parentElement.classList.remove('is-active');
-        contentAreas[i].classList.remove("show");
-      }
-    }
-    tabBtns[target].parentElement.classList.toggle('is-active');
-    contentAreas[target].classList.toggle("show");
+    const x = parseInt(el.dataset.target);
+    parseTabs(x);
   })
 });
+function parseTabs(target) {
+  for (i=0; i<tabBtns.length; i++) {
+    if (i == target) {
+      continue;
+    }
+    if (tabBtns[i].parentElement.classList.contains('is-active') && contentAreas[i].classList.contains('show')) {
+      tabBtns[i].parentElement.classList.remove('is-active');
+      contentAreas[i].classList.remove("show");
+    }
+  }
+  tabBtns[target].parentElement.classList.add('is-active');
+  contentAreas[target].classList.add("show");
+}
+window.addEventListener('hashchange', function() {
+  checkWindowHash();
+}, false);
+function checkWindowHash() {
+  if(window.location.hash) {
+    // Fragment exists
+    if(window.location.hash == "#robot") {
+      parseTabs(0);
+    }
+    else if(window.location.hash == "#kiosk") {
+      parseTabs(1);
+    }
+    else if(window.location.hash == "#web") {
+      parseTabs(2);
+    }
+    else if(window.location.hash == "#video") {
+      parseTabs(3);
+    }
+    else if(window.location.hash == "#mentor") {
+      parseTabs(4);
+    }
+  } else {
+    // Fragment doesn't exist
+  }
+}
 // Cookie functions
 function getCookie(cname) {
   var cookies = document.cookie;

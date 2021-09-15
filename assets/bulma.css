@@ -6694,6 +6694,16 @@ main.content-area.show {
   animation: fadeInDown 0.3s ease;
 }
 
+@keyframes fadeBack {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .back-to-top {
   display: none;
   border-radius: 8px;
@@ -6709,6 +6719,7 @@ main.content-area.show {
 .back-to-top.show {
   display: block;
   opacity: 1;
+  animation: fadeBack 0.25s ease;
 }
 
 

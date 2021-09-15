@@ -6,10 +6,10 @@ require 'layouts/header.php'; ?>
   <div class="hero-body">
     <div class="">
       <p class="title">
-        About Us
+        Our team
       </p>
       <p class="subtitle">
-        Who are we?
+        Another subtitle?
       </p>
     </div>
   </div>
@@ -17,14 +17,20 @@ require 'layouts/header.php'; ?>
     <nav class="tabs is-boxed is-fullwidth">
       <div class="container">
         <ul>
-          <li class="is-active">
-            <a class="tab-btn" data-target="0">Our school</a>
+          <li class="">
+            <a class="tab-btn" data-target="0">Robot</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="1">Something</a>
+            <a class="tab-btn" data-target="1">Kiosk</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="2">Something again</a>
+            <a class="tab-btn" data-target="2">Web</a>
+          </li>
+          <li>
+            <a class="tab-btn" data-target="3">Video</a>
+          </li>
+          <li>
+            <a class="tab-btn" data-target="4">Mentors</a>
           </li>
         </ul>
       </div>
@@ -32,11 +38,11 @@ require 'layouts/header.php'; ?>
   </div>
 </section>
 
-<main class="content-area fadeInUp show">
+<main class="content-area fadeInUp">
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>Our school</h1>
+        <h1>Robot</h1>
         <hr>
       </div>
     </div>
@@ -61,7 +67,7 @@ require 'layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>Sponsors</h1>
+        <h1>Kiosk</h1>
         <hr>
       </div>
     </div>
@@ -86,7 +92,7 @@ require 'layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>Contact</h1>
+        <h1>Web</h1>
         <hr>
       </div>
     </div>
@@ -107,7 +113,56 @@ require 'layouts/header.php'; ?>
     </div>
   </div>
 </main>
-
+<main class="content-area fadeInUp">
+  <div class="columns">
+    <div class="column is-full">
+      <div class="content">
+        <h1>Video</h1>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column is-three-quarters">
+      <div class="content">
+        <h3>
+          Our past team (not actually though).
+        </h3>
+        <p>Hello there</p>
+      </div>
+    </div>
+    <div class="column is-one-quarter">
+      <div class="content">
+        <img width="auto" height="auto" alt="an image" src="http://www.crhsrobotics.com/2019/assets/team_2014.jpg">
+      </div>
+    </div>
+  </div>
+</main>
+<main class="content-area fadeInUp">
+  <div class="columns">
+    <div class="column is-full">
+      <div class="content">
+        <h1>Mentors</h1>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column is-three-quarters">
+      <div class="content">
+        <h3>
+          Our past team (not actually though).
+        </h3>
+        <p>Hello there</p>
+      </div>
+    </div>
+    <div class="column is-one-quarter">
+      <div class="content">
+        <img width="auto" height="auto" alt="an image" src="http://www.crhsrobotics.com/2019/assets/team_2014.jpg">
+      </div>
+    </div>
+  </div>
+</main>
 
 <?php
 /*
