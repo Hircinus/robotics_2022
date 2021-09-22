@@ -1,5 +1,7 @@
 <?php
 $pageFr = 'a_propos';
+$pageTitle = 'About';
+$active = 1;
 require 'layouts/header.php'; ?>
 
 <section class="hero is-link has-text-left">

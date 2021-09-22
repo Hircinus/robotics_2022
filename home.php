@@ -1,5 +1,7 @@
 <?php
 $pageFr = 'accueil';
+$pageTitle = 'Home';
+$active = 0;
 require 'layouts/header.php'; ?>
 
 <section class="hero is-info is-medium has-text-left">

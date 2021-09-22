@@ -4,8 +4,10 @@
   <link rel="stylesheet" id="main-style" type="text/css" href="assets/bulma.css">
   <link rel="stylesheet" type="text/css" href="assets/animate.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title><?php echo $pageTitle, " - CRC Robotics 2022"; ?></title>
 </head>
 <body>
+  <?php // echo $_SERVER['REQUEST_URI']; ?>
   <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand bounceIn">
     <a class="navbar-item" href="home">
@@ -21,22 +23,22 @@
 
   <div id="navbar-menu" class="navbar-menu">
     <div class="navbar-start">
-      <a href="home" class="navbar-item">
+      <a href="home" class="navbar-item <?php if ($active == 0) { echo "active"; } ?>">
         Home
       </a>
-      <a href="about" class="navbar-item">
+      <a href="about" class="navbar-item <?php if ($active == 1) { echo "active"; } ?>">
         About
       </a>
-      <a href="crc" class="navbar-item">
+      <a href="crc" class="navbar-item" <?php if ($active == 2) { echo "active"; } ?>>
         The CRC
       </a>
-      <a href="robot" class="navbar-item">
+      <a href="robot" class="navbar-item <?php if ($active == 3) { echo "active"; } ?>">
         Our Robot
       </a>
-      <a href="game" class="navbar-item">
+      <a href="game" class="navbar-item" <?php if ($active == 4) { echo "active"; } ?>>
         The game
       </a>
-      <div id="dropdownBox" class="navbar-item has-dropdown" data-target="0">
+      <div id="dropdownBox" class="navbar-item has-dropdown <?php if ($active == 5) { echo "active"; } ?>" data-target="0">
         <a class="navbar-link">
           Team
         </a>
@@ -60,7 +62,7 @@
           </a>
         </div>
       </div>
-      <a href="media" class="navbar-item">
+      <a href="media" class="navbar-item <?php if ($active == 6) { echo "active"; } ?>">
         Media
       </a>
     </div>

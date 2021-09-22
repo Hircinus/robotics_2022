@@ -6643,6 +6643,21 @@ html {
 .navbar-menu .has-dropdown .navbar-dropdown.show {
   display: block!important
 }
+.navbar-item {
+  border-bottom: 2px transparent solid;
+}
+.navbar-item.active {
+  font-weight: bold;
+}
+.navbar-item.active:nth-of-type(1) {
+  border-bottom: 2px solid #3E8ED0;
+}
+.navbar-item.active:nth-of-type(2) {
+  border-bottom: 2px solid #485FC7;
+}
+.navbar-item.active:nth-of-type(6) {
+  border-bottom: 2px solid #485FC7;
+}
 
 #darkMode {
   transition: background-color 0.25s ease, color 0.25s ease;

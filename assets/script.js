@@ -1,10 +1,10 @@
-var navbarToggle = document.getElementById('navbar-toggle');
-var navbarMenu = document.getElementById('navbar-menu');
-var navbarDropdownToggle = document.getElementsByClassName('has-dropdown');
+const navbarToggle = document.getElementById('navbar-toggle');
+const navbarMenu = document.getElementById('navbar-menu');
+const navbarDropdownToggle = document.getElementsByClassName('has-dropdown');
 // convert previous HTMLCollection to array
-var navbarToggles = Array.from(navbarDropdownToggle);
-var navbarDropdowns = document.getElementsByClassName('navbar-dropdown');
-var navbarLinks = document.getElementsByClassName('navbar-link');
+const navbarToggles = Array.from(navbarDropdownToggle);
+const navbarDropdowns = document.getElementsByClassName('navbar-dropdown');
+const navbarLinks = document.getElementsByClassName('navbar-link');
 // For hamburger menu button on smaller screens (width < 1024px)
 navbarToggle.addEventListener('click', function() {
   navbarToggle.classList.toggle("is-active");
