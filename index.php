@@ -1,1 +1,14 @@
-<?php $lang=substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);$acceptLang=['en','fr'];$lang=in_array($lang,$acceptLang)?$lang:'en';if($lang=='en'){header("Location: home");die();}if($lang=='fr'){header("Location: fr/accueil");die();}else{header("Location: home");die;} ?>
+<?php
+$active = 0;
+require 'layouts/header.php';
+?>
+  <main class="px-3">
+    <h1>Cover your page.</h1>
+    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+    </p>
+  </main>
+<?php
+require 'layouts/footer.php';
+?>

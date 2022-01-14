@@ -1,85 +1,60 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" id="main-style" type="text/css" href="assets/bulma.css">
-  <link rel="stylesheet" type="text/css" href="assets/animate.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <title><?php echo $pageTitle, " - CRC Robotics 2022"; ?></title>
-</head>
-<body>
-  <?php // echo $_SERVER['REQUEST_URI']; ?>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand bounceIn">
-    <a class="navbar-item" href="home">
-      <img src="assets/logo.png">
-    </a>
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Cover Template · Bootstrap v5.1</title>
 
-    <a role="button" class="navbar-burger" id='navbar-toggle' aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
 
-  <div id="navbar-menu" class="navbar-menu">
-    <div class="navbar-start">
-      <a href="home" class="navbar-item <?php if ($active == 0) { echo "active"; } ?>">
-        Home
-      </a>
-      <a href="about" class="navbar-item <?php if ($active == 1) { echo "active"; } ?>">
-        About
-      </a>
-      <a href="crc" class="navbar-item" <?php if ($active == 2) { echo "active"; } ?>>
-        The CRC
-      </a>
-      <a href="robot" class="navbar-item <?php if ($active == 3) { echo "active"; } ?>">
-        Our Robot
-      </a>
-      <a href="game" class="navbar-item" <?php if ($active == 4) { echo "active"; } ?>>
-        The game
-      </a>
-      <div id="dropdownBox" class="navbar-item has-dropdown <?php if ($active == 5) { echo "active"; } ?>" data-target="0">
-        <a class="navbar-link">
-          Team
-        </a>
+    
 
-        <div class="navbar-dropdown">
-          <a href="team#robot" class="navbar-item checkHash">
-            Robot team
-          </a>
-          <a href="team#kiosk" class="navbar-item checkHash">
-            Kiosk Team
-          </a>
-          <a href="team#web" class="navbar-item checkHash">
-            Webjournalism team
-          </a>
-          <a href="team#video" class="navbar-item checkHash">
-            Video team
-          </a>
-          <hr class="navbar-divider">
-          <a href="team#mentor" class="navbar-item checkHash">
-            Mentors & mentions
-          </a>
-        </div>
-      </div>
-      <a href="media" class="navbar-item <?php if ($active == 6) { echo "active"; } ?>">
-        Media
-      </a>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons 
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">-->
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Cover</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Contact</a>
+      </nav>
     </div>
-    </div>
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a href="<?php echo 'fr/', $pageFr; ?>" class="button is-light">
-            Fran&ccedil;ais
-          </a>
-          <!--
-          <a id="darkMode" class="button is-dark">
-            <i class="far fa-moon"></i>
-          </a>
-          -->
-        </div>
-      </div>
-    </div>
-    </div>
-  </nav>
+  </header>
