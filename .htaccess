@@ -1,6 +1,6 @@
 # ERROR xxx REDIRECT URL
-ErrorDocument 404 /404
-ErrorDocument 500 /500
+ErrorDocument 404 /robotics_2022/layouts/404.php
+ErrorDocument 500 /robotics_2022/layouts/500.php
 # Add '/CRHS_robotics-2020' for local hosting
 
 # DEFAULT PAGE

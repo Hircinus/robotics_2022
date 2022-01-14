@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" id="main-style" type="text/css" href="assets/bulma.css">
   <link rel="stylesheet" type="text/css" href="assets/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/custom.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <title><?php echo $pageTitle, " - CRC Robotics 2022"; ?></title>
 </head>

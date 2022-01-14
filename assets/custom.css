@@ -1,0 +1,118 @@
+/* CUSTOM CSS 
+@media screen and (max-width: 768px) {
+  .buttons a {
+    width: 100%
+  }
+} */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar-menu .has-dropdown .navbar-dropdown {
+    display: none!important
+  }
+  .navbar-menu .has-dropdown .navbar-dropdown.show {
+    display: block!important
+  }
+  .navbar-item {
+    border-bottom: 2px transparent solid;
+  }
+  .navbar-item.active {
+    font-weight: bold;
+  }
+  .navbar-item.active:nth-of-type(1) {
+    border-bottom: 2px solid #3E8ED0;
+  }
+  .navbar-item.active:nth-of-type(2) {
+    border-bottom: 2px solid #485FC7;
+  }
+  .navbar-item.active:nth-of-type(6) {
+    border-bottom: 2px solid #485FC7;
+  }
+  
+  #darkMode {
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  
+  .section.is-light {
+    background-color: whitesmoke;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  main.content-area {
+    padding: 40px 40px 20px 40px;
+    display: none;
+  }
+  main {
+    z-index: 0;
+  }
+  main.content-area.show {
+    display: block
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    animation: fadeInUp 0.3s ease-out;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInDown {
+    animation: fadeInDown 0.3s ease;
+  }
+  
+  @keyframes fadeBack {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Back-to-top button */
+  .back-to-top {
+    display: none;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+    position: fixed;
+    opacity: 0;
+    bottom: 50px;
+    right: 50px;
+    transition: opacity 0.25s ease;
+    background-color: #fff;
+  }
+  .back-to-top.show {
+    display: block;
+    opacity: 1;
+    animation: fadeBack 0.25s ease;
+  }
+
+  .footer {
+      z-index: 30;
+      position: relative;
+  }
