@@ -28,7 +28,7 @@
         Home
       </a>
       <a href="about" class="navbar-item <?php if ($active == 1) { echo "active"; } ?>">
-        About
+        About us
       </a>
       <a href="crc" class="navbar-item" <?php if ($active == 2) { echo "active"; } ?>>
         The CRC
