@@ -13,6 +13,6 @@
     </a>
   </div>
   </footer>
-  <script src="assets/script.js"></script>
+  <script src="<?php echo $pathPrefix; ?>assets/script.js"></script>
   </body>
 </html>

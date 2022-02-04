@@ -1,14 +1,14 @@
 <?php
-$pageFr = 'accueil';
-$pageTitle = 'Home';
+$pageEn = 'home';
+$pageTitle = 'Accueil';
 $active = 0;
-require 'layouts/header.php'; ?>
+require '../layouts/header.php'; ?>
 
 <section class="hero is-info is-medium has-text-left">
   <div class="hero-body">
     <div class="content">
       <h1 class="title">
-        CRC Robotics 2022
+        CRC Robotique 2022
       </h1>
     </div>
   </div>
@@ -111,5 +111,5 @@ require 'layouts/header.php'; ?>
 
 
 <?php
-require 'layouts/footer.php';
+require '../layouts/footer.php';
 ?>
