@@ -1,7 +1,7 @@
 <?php
 $pageFr = 'equipe';
 $pageTitle = 'Team';
-$active = 5;
+$active = 3;
 require 'layouts/header.php'; ?>
 
 <section class="hero is-link has-text-left">
@@ -50,18 +50,14 @@ require 'layouts/header.php'; ?>
     </div>
   </div>
   <div class="columns">
-    <div class="column is-three-quarters">
-      <div class="content">
-        <h3>
-          Our past team (not actually though).
-        </h3>
-        <p>Hello there</p>
-      </div>
-    </div>
-    <div class="column is-one-quarter">
-      <div class="content">
-        <img width="auto" height="auto" alt="an image" src="http://www.crhsrobotics.com/2019/assets/team_2014.jpg">
-      </div>
+    <div class="column is-one-fifth">
+      <?php
+      $imgPath = "assets/member/chris.jpg";
+      $name = "Chris";
+      $years = "First year";
+      $content = "I'm a hard worker and a bundle of laughs!";
+      require 'layouts/card.php';
+      ?>
     </div>
   </div>
 </main>
@@ -100,18 +96,14 @@ require 'layouts/header.php'; ?>
     </div>
   </div>
   <div class="columns">
-    <div class="column is-three-quarters">
-      <div class="content">
-        <h3>
-          Our past team (not actually though).
-        </h3>
-        <p>Hello there</p>
-      </div>
-    </div>
-    <div class="column is-one-quarter">
-      <div class="content">
-        <img width="auto" height="auto" alt="an image" src="http://www.crhsrobotics.com/2019/assets/team_2014.jpg">
-      </div>
+    <div class="column is-one-fifth">
+      <?php
+      $imgPath = "assets/member/jess.jpg";
+      $name = "Jess Al Fahad";
+      $years = "Second year";
+      $content = "&amp;#115; &amp;#117; &amp;#115;";
+      require 'layouts/card.php';
+      ?>
     </div>
   </div>
 </main>

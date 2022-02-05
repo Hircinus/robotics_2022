@@ -113,6 +113,15 @@ html {
     border-radius: 8px;
   }
 
+  .card {
+    border-radius: 8px!important;
+    box-shadow: 0 2px 2px rgba(10, 10, 10, 0.1);
+    transition: box-shadow .25s ease;
+  }
+  .card:hover {
+    box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+  }
+
   /* Back-to-top button */
   .back-to-top {
     display: none;
@@ -135,4 +144,10 @@ html {
   .footer {
       z-index: 30;
       position: relative;
+  }
+
+  figure.image img {
+    object-fit: contain;
+    max-height: 300px;
+    margin-top: 25px;
   }

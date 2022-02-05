@@ -57,20 +57,10 @@
         <a href="crc" class="navbar-item ';
         if ($active == 2) { echo "active"; }
         echo '">
-          The CRC
-        </a>
-        <a href="robot" class="navbar-item ';
-        if ($active == 3) { echo "active"; }
-        echo '">
-          Our Robot
-        </a>
-        <a href="game" class="navbar-item ';
-        if ($active == 4) { echo "active"; }
-        echo '">
-          The game
+          The competition
         </a>
         <div id="dropdownBox" class="navbar-item has-dropdown ';
-        if ($active == 5) { echo "active"; }
+        if ($active == 3) { echo "active"; }
         echo '" data-target="0">
           <a class="navbar-link">
             Team
@@ -96,7 +86,7 @@
           </div>
         </div>
         <a href="media" class="navbar-item ';
-        if ($active == 6) { echo "active"; }
+        if ($active == 4) { echo "active"; }
         echo '">
           Media
         </a>
@@ -147,46 +137,36 @@
         <a href="crc" class="navbar-item ';
         if ($active == 2) { echo "active"; }
         echo '">
-          Le CRC
-        </a>
-        <a href="robot" class="navbar-item ';
-        if ($active == 3) { echo "active"; }
-        echo '">
-          Notre Robot
-        </a>
-        <a href="jeu" class="navbar-item ';
-        if ($active == 4) { echo "active"; }
-        echo '">
-          Le jeu
+          Le concours
         </a>
         <div id="dropdownBox" class="navbar-item has-dropdown ';
-        if ($active == 5) { echo "active"; }
+        if ($active == 3) { echo "active"; }
         echo '" data-target="0">
           <a class="navbar-link">
             &Eacute;quipe
           </a>
   
           <div class="navbar-dropdown">
-            <a href="team#robot" class="navbar-item checkHash">
+            <a href="equipe#robot" class="navbar-item checkHash">
               Robot
             </a>
-            <a href="team#kiosque" class="navbar-item checkHash">
+            <a href="equipe#kiosque" class="navbar-item checkHash">
               Kiosque
             </a>
-            <a href="team#web" class="navbar-item checkHash">
+            <a href="equipe#web" class="navbar-item checkHash">
               Webjournalisme
             </a>
-            <a href="team#video" class="navbar-item checkHash">
+            <a href="equipe#video" class="navbar-item checkHash">
               Vid&eacute;o
             </a>
             <hr class="navbar-divider">
-            <a href="team#tuteur" class="navbar-item checkHash">
+            <a href="equipe#tuteur" class="navbar-item checkHash">
               Tuteurs & mentions
             </a>
           </div>
         </div>
         <a href="media" class="navbar-item ';
-        if ($active == 6) { echo "active"; }
+        if ($active == 4) { echo "active"; }
         echo '">
           M&eacute;dia
         </a>
