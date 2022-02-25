@@ -70,6 +70,9 @@
             <a href="team#robot" class="navbar-item checkHash">
               Robot team
             </a>
+            <a href="team#programming" class="navbar-item checkHash">
+              Programming team
+            </a>
             <a href="team#kiosk" class="navbar-item checkHash">
               Kiosk Team
             </a>
@@ -85,8 +88,13 @@
             </a>
           </div>
         </div>
-        <a href="media" class="navbar-item ';
+        <a href="contact" class="navbar-item ';
         if ($active == 4) { echo "active"; }
+        echo '">
+          Contact
+        </a>
+        <a href="media" class="navbar-item ';
+        if ($active == 5) { echo "active"; }
         echo '">
           Media
         </a>
@@ -150,6 +158,9 @@
             <a href="equipe#robot" class="navbar-item checkHash">
               Robot
             </a>
+            <a href="equipe#programming" class="navbar-item checkHash">
+              Programming
+            </a>
             <a href="equipe#kiosque" class="navbar-item checkHash">
               Kiosque
             </a>
@@ -165,8 +176,13 @@
             </a>
           </div>
         </div>
-        <a href="media" class="navbar-item ';
+        <a href="contacte" class="navbar-item ';
         if ($active == 4) { echo "active"; }
+        echo '">
+          Contact
+        </a>
+        <a href="media" class="navbar-item ';
+        if ($active == 5) { echo "active"; }
         echo '">
           M&eacute;dia
         </a>

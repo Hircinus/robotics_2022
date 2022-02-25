@@ -17,13 +17,13 @@ require 'layouts/header.php'; ?>
       <div class="container">
         <ul>
           <li class="is-active">
-            <a class="tab-btn" data-target="0">What we're all about</a>
+            <a class="tab-btn" data-target="0">Our goals</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="1">Sponsors</a>
+            <a class="tab-btn" data-target="1">What we accomplished</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="2">Contact Us</a>
+            <a class="tab-btn" data-target="2">Our future</a>
           </li>
         </ul>
       </div>
@@ -35,7 +35,7 @@ require 'layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>What we're all about</h1>
+        <h1>Our goals</h1>
         <hr>
       </div>
     </div>
@@ -62,7 +62,7 @@ require 'layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>Sponsors</h1>
+        <h1>What we accomplished</h1>
         <hr>
       </div>
     </div>
@@ -87,7 +87,7 @@ require 'layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>Contact</h1>
+        <h1>Our future</h1>
         <hr>
       </div>
     </div>

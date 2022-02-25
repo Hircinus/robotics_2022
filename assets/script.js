@@ -67,22 +67,43 @@ window.addEventListener('hashchange', function() {
   checkWindowHash();
 }, false);
 function checkWindowHash() {
+  let dropdownItems = document.getElementsByClassName("checkHash");
+  let clearDropdownActive = function() {
+    for(i = 0; i < dropdownItems.length; i++) {
+      dropdownItems[i].classList.remove("active");
+    }
+  };
   if(window.location.hash) {
     // Fragment exists
-    if(window.location.hash == "#robot") {
+    if(window.location.hash == "#robot" || window.location.hash == "#") {
       parseTabs(0);
+      clearDropdownActive();
+      dropdownItems[0].classList.add("active");
+    }
+    else if(window.location.hash == "#programming") {
+      parseTabs(1);
+      clearDropdownActive();
+      dropdownItems[1].classList.add("active");
     }
     else if(window.location.hash == "#kiosk") {
-      parseTabs(1);
+      parseTabs(2);
+      clearDropdownActive();
+      dropdownItems[2].classList.add("active");
     }
     else if(window.location.hash == "#web") {
-      parseTabs(2);
+      parseTabs(3);
+      clearDropdownActive();
+      dropdownItems[3].classList.add("active");
     }
     else if(window.location.hash == "#video") {
-      parseTabs(3);
+      parseTabs(4);
+      clearDropdownActive();
+      dropdownItems[4].classList.add("active");
     }
     else if(window.location.hash == "#mentor") {
-      parseTabs(4);
+      parseTabs(5);
+      clearDropdownActive();
+      dropdownItems[5].classList.add("active");
     }
   } else {
     // Fragment doesn't exist

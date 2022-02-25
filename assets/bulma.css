@@ -2209,7 +2209,7 @@ div.icon-text {
 .image img {
   display: block;
   height: auto;
-  width: 99%;
+  width: 100%;
 }
 
 .image img.is-rounded {
