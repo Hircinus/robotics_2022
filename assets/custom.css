@@ -1,9 +1,7 @@
-/* CUSTOM CSS 
-@media screen and (max-width: 768px) {
-  .buttons a {
-    width: 100%
-  }
-} */
+:root {
+  --card-content-lim: 12em;
+  --card-img-lim: 15em;
+}
 html {
     scroll-behavior: smooth;
   }
@@ -20,6 +18,12 @@ html {
   }
   .navbar-start .navbar-item {
     border-bottom: 2px transparent solid;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   .navbar-item.active {
     font-weight: bold;
@@ -123,8 +127,9 @@ html {
     transition: box-shadow .25s ease;
   }
   .card-content {
-    max-height: 200px;
-    overflow-y: scroll;
+    max-height: var(--card-content-lim);
+    min-height: var(--card-content-lim);
+    overflow-y: auto;
   }
   .card:hover {
     box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
@@ -154,9 +159,18 @@ html {
       position: relative;
   }
 
+  img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
   figure.image img {
     object-fit: cover;
-    max-height: 200px;
+    max-height: var(--card-img-lim);
     margin-top: 25px;
     border-radius: 8px 8px 0 0!important;
   }

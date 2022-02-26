@@ -186,7 +186,6 @@ require 'layouts/header.php'; ?>
     </div>
   </div>
 </main>
-
 <?php
 /*
 $servername = "localhost";

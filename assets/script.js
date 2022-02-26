@@ -1,10 +1,11 @@
-const navbarToggle = document.getElementById('navbar-toggle');
-const navbarMenu = document.getElementById('navbar-menu');
-const navbarDropdownToggle = document.getElementsByClassName('has-dropdown');
+let navbarToggle = document.getElementById('navbar-toggle');
+let navbarMenu = document.getElementById('navbar-menu');
+let navbarDropdownToggle = document.getElementsByClassName('has-dropdown');
 // convert previous HTMLCollection to array
-const navbarToggles = Array.from(navbarDropdownToggle);
-const navbarDropdowns = document.getElementsByClassName('navbar-dropdown');
-const navbarLinks = document.getElementsByClassName('navbar-link');
+let navbarToggles = Array.from(navbarDropdownToggle);
+let navbarDropdowns = document.getElementsByClassName('navbar-dropdown');
+let navbarLinks = document.getElementsByClassName('navbar-link');
+let cardContents = document.getElementsByClassName("card-content");
 // For hamburger menu button on smaller screens (width < 1024px)
 navbarToggle.addEventListener('click', function() {
   navbarToggle.classList.toggle("is-active");
@@ -13,25 +14,28 @@ navbarToggle.addEventListener('click', function() {
 // For dropdown menus within the navbar, any screen size
 navbarToggles.forEach(el => {
   el.addEventListener('click', () => {
-    const target = parseInt(el.dataset.target);
-    for (i=0; i<navbarLinks.length; i++) {
-      if (i == target) {
-        continue;
+    for (i=0; i<navbarDropdowns.length; i++) {
+      if (navbarToggles[i] == el) {
+        navbarLinks[i].classList.toggle('open');
+        navbarDropdowns[i].classList.toggle("show");
       }
-      if (navbarLinks[i].classList.contains('open') && navbarDropdowns[i].classList.contains('show')) {
+      else {
         navbarLinks[i].classList.remove('open');
         navbarDropdowns[i].classList.remove("show");
       }
     }
-    navbarLinks[target].classList.toggle('open');
-    navbarDropdowns[target].classList.toggle("show");
   })
 });
 window.addEventListener('click', function(e){
-  if (document.getElementById('dropdownBox').contains(e.target)){
-    // Clicked in box
-  } else{
-    // Clicked outside the box
+  let dropdownBoxes = document.getElementsByClassName("has-dropdown");
+  var counter = 0;
+  for(i=0;i<dropdownBoxes.length;i++) {
+    if (dropdownBoxes[i].contains(e.target)){
+      // Clicked in box
+      counter++;
+    }
+  }
+  if (counter==0) {
     for (i=0; i<navbarLinks.length; i++) {
       navbarLinks[i].classList.remove('open');
       navbarDropdowns[i].classList.remove("show");
