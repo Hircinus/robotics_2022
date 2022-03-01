@@ -109,27 +109,24 @@ function checkWindowHash() {
       clearDropdownActive();
       dropdownItems[5].classList.add("active");
     }
+    else if(window.location.hash == "#presentation") {
+      parseTabs(0);
+      clearDropdownActive();
+      dropdownItems[6].classList.add("active");
+    }
+    else if(window.location.hash == "#tutorials") {
+      parseTabs(1);
+      clearDropdownActive();
+      dropdownItems[7].classList.add("active");
+    }
+    else if(window.location.hash == "#gallery") {
+      parseTabs(2);
+      clearDropdownActive();
+      dropdownItems[8].classList.add("active");
+    }
   } else {
     // Fragment doesn't exist
   }
-}
-// Cookie functions
-function getCookie(cname) {
-  var cookies = document.cookie;
-  indCookies = cookies.split(";");
-  for(i=0;i<indCookies.length;i++) {
-    parts = indCookies[i].split("=");
-    name = parts[0];
-    if(cname==name) {
-        cvalue = parts[1];
-      return cvalue;
-      break;
-    }
-    else {
-      continue;
-    }
-  }
-  return false;
 }
 
 // Dark mode handling - DEPRECATED

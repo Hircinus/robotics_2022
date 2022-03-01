@@ -3,7 +3,13 @@ $pageFr = 'accueil';
 $pageTitle = 'Home';
 $active = 0;
 require 'layouts/header.php'; ?>
-
+<style>
+  .hero.has-carousel {
+    height: 450px!important;
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+<!--
 <section class="hero is-info is-medium has-text-left">
   <div class="hero-body">
     <div class="content">
@@ -30,6 +36,37 @@ require 'layouts/header.php'; ?>
     </nav>
   </div>
 </section>
+-->
+
+<!-- Start Hero Carousel -->
+<section class="hero is-medium has-carousel">
+			<div id="carousel-demo" data-loop="true" height="1000px" class="hero-carousel">
+				<div class="item-1">
+					<!-- Slide Content -->
+          <img class="cover-img" width="auto" height="auto" alt="an image" src="assets/champlain.jpeg">
+				</div>
+				<div class="item-2">
+					<!-- Slide Content -->
+          <img class="cover-img" width="auto" height="auto" alt="an image" src="assets/robot_programming_1.jpg">
+				</div>
+				<div class="item-3">
+					<!-- Slide Content -->
+          <img class="cover-img" width="auto" height="auto" alt="an image" src="assets/robot_planning_1.jpg">
+				</div>
+			</div>
+			<div class="hero-head"></div>
+			<div class="hero-body"></div>
+			<div class="hero-foot"></div>
+		</section>
+		<!-- End Hero Carousel -->
+
+		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+		<script>
+			bulmaCarousel.attach('#carousel-demo', {
+				slidesToScroll: 1,
+				slidesToShow: 1
+			});
+		</script>
 
 <main class="content-area fadeInUp show">
   <div class="columns">

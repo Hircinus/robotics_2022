@@ -1,15 +1,20 @@
 <?php
-$pageEn = 'home';
-$pageTitle = 'Accueil';
-$active = 0;
-require '../layouts/header.php'; ?>
+$pageFr = 'crc';
+$pageTitle = 'Competition';
+$active = 2;
+require 'layouts/header.php'; ?>
 
-<section class="hero is-info is-medium has-text-left">
+<section class="hero is-link has-text-left">
   <div class="hero-body">
-    <div class="content">
-      <h1 class="title">
-        CRC Robotique 2022
-      </h1>
+    <div class="">
+      <p class="title">
+        The competition
+      </p>
+      <!--
+      <p class="subtitle">
+        Who are we?
+      </p>
+-->
     </div>
   </div>
   <div class="hero-foot">
@@ -17,13 +22,13 @@ require '../layouts/header.php'; ?>
       <div class="container">
         <ul>
           <li class="is-active">
-            <a class="tab-btn" data-target="0">What we're all about</a>
+            <a class="tab-btn" data-target="0">What is it?</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="1">Sponsors</a>
+            <a class="tab-btn" data-target="1">Our robot</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="2">Contact Us</a>
+            <a class="tab-btn" data-target="2">Our team</a>
           </li>
         </ul>
       </div>
@@ -35,7 +40,7 @@ require '../layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>What we're all about</h1>
+        <h1>Canadian Robotics Competition (CRC)</h1>
         <hr>
       </div>
     </div>
@@ -44,18 +49,13 @@ require '../layouts/header.php'; ?>
     <div class="column is-three-quarters">
       <div class="content">
         <p>
-        L'équipe Robotique de Champlain est plus qu'une simple équipe d'ingénieurs. En plus de la conception et de la construction d'un robot, nous et les autres participants sont jugés sur :
+        Founded in 2001, CRC Robotics Competition aims to foster students’ passion for STEM through a competition in which students from various schools come together to create a robot for a game, create a website, compete in a programming competition, create a video, and present/pitch their project. Invicta 2021 will take place on February 18 to 21.
         </p>
-        <ul>
-          <li>La construction d'un kiosque.</li>
-          <li>La résolution d'une compétition de programmation.</li>
-          <li>La conception et le développement d'un site Web.</li>
-          <li>La production de deux vidéos : une pour présenter notre équipe et une autre pour fournir un tutoriel.</li>
       </div>
     </div>
     <div class="column is-one-quarter">
       <div class="content">
-        <img width="auto" height="auto" alt="an image" src="http://www.crhsrobotics.com/2019/assets/team_2014.jpg">
+        <img width="auto" height="auto" alt="an image" src="assets/champlain.jpeg">
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@ require '../layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>Sponsors</h1>
+        <h1>Our team</h1>
         <hr>
       </div>
     </div>
@@ -89,7 +89,7 @@ require '../layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>Contact</h1>
+        <h1>Our team</h1>
         <hr>
       </div>
     </div>
@@ -113,5 +113,5 @@ require '../layouts/header.php'; ?>
 
 
 <?php
-require '../layouts/footer.php';
+require 'layouts/footer.php';
 ?>

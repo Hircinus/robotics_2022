@@ -20,22 +20,22 @@ require 'layouts/header.php'; ?>
       <div class="container">
         <ul>
           <li class="">
-            <a class="tab-btn" data-target="0">Robot</a>
+            <a class="tab-btn" href="#robot" data-target="0">Robot</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="1">Programming</a>
+            <a class="tab-btn" href="#programming" data-target="1">Programming</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="2">Kiosk</a>
+            <a class="tab-btn" href="#kiosk" data-target="2">Kiosk</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="3">Web</a>
+            <a class="tab-btn" href="#web" data-target="3">Web</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="4">Video</a>
+            <a class="tab-btn" href="#video" data-target="4">Video</a>
           </li>
           <li>
-            <a class="tab-btn" data-target="5">Mentors</a>
+            <a class="tab-btn" href="#mentor" data-target="5">Mentors</a>
           </li>
         </ul>
       </div>
@@ -157,7 +157,7 @@ require 'layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-one-quarter">
       <?php
-      $imgPath = "assets/member/jess.jpg";
+      $imgPath = "assets/member/anon.png";
       $name = "Jess Al Fahad";
       $years = "Second year";
       $content = "&amp;#115; &amp;#117; &amp;#115;";

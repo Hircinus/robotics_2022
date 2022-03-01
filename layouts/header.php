@@ -93,11 +93,25 @@
         echo '">
           Contact
         </a>
-        <a href="media" class="navbar-item ';
+        <div id="dropdownBox" class="navbar-item has-dropdown ';
         if ($active == 5) { echo "active"; }
-        echo '">
-          Media
-        </a>
+        echo '" data-target="0">
+          <a class="navbar-link">
+            Media
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a href="media#presentation" class="navbar-item checkHash">
+              Presentation
+            </a>
+            <a href="media#tutorials" class="navbar-item checkHash">
+              Tutorials
+            </a>
+            <a href="media#gallery" class="navbar-item checkHash">
+              Gallery
+            </a>
+          </div>
+        </div>
       </div>
       </div>
       <div class="navbar-end">
@@ -181,11 +195,25 @@
         echo '">
           Contact
         </a>
-        <a href="media" class="navbar-item ';
+        <div id="dropdownBox" class="navbar-item has-dropdown ';
         if ($active == 5) { echo "active"; }
-        echo '">
-          M&eacute;dia
-        </a>
+        echo '" data-target="0">
+          <a class="navbar-link">
+            M&eacute;dia
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a href="media#presentation" class="navbar-item checkHash">
+              Pr&eacute;sentation
+            </a>
+            <a href="media#tutoriels" class="navbar-item checkHash">
+              Tutoriels
+            </a>
+            <a href="media#gallerie" class="navbar-item checkHash">
+              Gallerie
+            </a>
+          </div>
+        </div>
       </div>
       </div>
       <div class="navbar-end">
