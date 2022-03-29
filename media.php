@@ -107,16 +107,22 @@ Champlain College operates under a set of unchanging core ideals that form the c
         <div class="tile is-parent is-vertical">
           <article class="tile is-child notification">
             <p class="subtitle">Top tile</p>
+            <figure class="image is-4by3">
+              <img src="assets/robot_programming_1.jpg">
+            </figure>
           </article>
           <article class="tile is-child notification">
             <p class="subtitle">Bottom tile</p>
+            <figure class="image is-4by3">
+              <img src="assets/robot_programming_1.jpg">
+            </figure>
           </article>
         </div>
         <div class="tile is-parent">
           <article class="tile is-child notification">
             <p class="subtitle">With an image</p>
             <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/640x480.png">
+              <img src="assets/robot_programming_1.jpg">
             </figure>
           </article>
         </div>

@@ -1,13 +1,13 @@
 # ERROR xxx REDIRECT URL
 ErrorDocument 404 /robotics_2022/layouts/404.php
 # ErrorDocument 500 /robotics_2022/layouts/500.php
-# Add '/CRHS_robotics-2020' for local hosting
+# Add '/robotics_2022' for local hosting
 
 # DEFAULT PAGE
 
 DirectoryIndex index.php home
 
-# REMOVES EXTENSION
+# REMOVE PHP EXTENSION
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
