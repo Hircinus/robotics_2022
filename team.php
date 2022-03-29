@@ -10,9 +10,6 @@ require 'layouts/header.php'; ?>
       <p class="title">
         Our team
       </p>
-      <p class="subtitle">
-        Another subtitle?
-      </p>
     </div>
   </div>
   <!--
