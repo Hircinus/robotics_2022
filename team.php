@@ -74,6 +74,16 @@ require 'layouts/header.php'; ?>
     </div>
     <div class="column is-one-quarter">
       <?php
+      $imgPath = "assets/member/elessia.jpg";
+      $name = "Elessia";
+      $years = "Robot team";
+      $content = "I first started robotics 2 years ago… When I was introduced I knew nothing. Now, due to the amazing people I met, I learnt so much and made so many memories. Robotics isn’t just about building and programming, it’s about having fun with the family we built!
+      I am now the treasurer of robotics, anything having to do with money just come see me!";
+      require 'layouts/card.php';
+      ?>
+    </div>
+    <div class="column is-one-quarter">
+      <?php
       $imgPath = "assets/member/anon.png";
       $name = "Elie";
       $years = "Programming team";

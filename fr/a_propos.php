@@ -44,13 +44,29 @@ require '../layouts/header.php'; ?>
     <div class="column is-three-quarters">
       <div class="content">
         <p>
-        L'équipe Robotique de Champlain est plus qu'une simple équipe d'ingénieurs. En plus de la conception et de la construction d'un robot, nous et les autres participants sont jugés sur :
-        </p>
-        <ul>
-          <li>La construction d'un kiosque.</li>
-          <li>La résolution d'une compétition de programmation.</li>
-          <li>La conception et le développement d'un site Web.</li>
-          <li>La production de deux vidéos : une pour présenter notre équipe et une autre pour fournir un tutoriel.</li>
+        Champlain College Saint-Lambert est un cégep public de langue anglaise situé sur la Rive-Sud
+        de Montréal à 10 minutes à pied de la station de métro Longueuil-Université de Sherbrooke. 
+        Nous offrons des programmes préuniversitaires de deux ans et des programmes de carrière de trois ans.
+        <br>
+        Environ 3 000 étudiants fréquentent le Collège Champlain Saint-Lambert. Nos étudiants viennent de 
+        cultures diverses et parlent une variété de langues, ce qui donne au collège un environnement 
+        convivial et multiculturel où vous rencontrerez de nouvelles personnes et vivrez de nouvelles expériences.
+        <br>
+        Au Collège Champlain Saint-Lambert, notre taille est notre force. Nos petites classes et nos laboratoires
+        signifient que nos professeurs peuvent prendre le temps de vous connaître et de vous donner une attention
+        et des commentaires personnels. De plus, les étudiants ont facilement accès à une variété de services de
+        soutien académique, tels que des ordinateurs, des conseils, des conseils académiques et des services de
+        bibliothèque, pour n'en nommer que quelques-uns.
+        <br>
+        Découvrez ce que le Collège Champlain Saint-Lambert a à vous offrir et ce que nous faisons 
+        pour assurer votre succès!
+        <br>
+        Le Collège Champlain fonctionne selon un ensemble d’idéaux fondamentaux immuables qui forment la 
+        vision du Collège et qui sont exprimés dans l’énoncé de mission du Collège.  Nos valeurs constituent 
+        le fondement de la façon dont nous, en tant qu’institution d’apprentissage, fonctionnons. Notre vision, 
+        notre mission et notre déclaration d’intention aident à articuler la façon dont ces valeurs guident notre 
+        institution.
+      </p>
       </div>
     </div>
     <div class="column is-one-quarter">
