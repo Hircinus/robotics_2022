@@ -22,10 +22,10 @@
   <link rel="stylesheet" type="text/css" href="<?php echo $pathPrefix; ?>assets/custom.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <?php
-  if(!$isFrench) { echo '<meta name="description" content="An interesting description.">'; }
-  else { echo '<meta name="description" content="Une description int&eacute;ressante.">'; }
+  if(!$isFrench) { echo '<meta name="description" content="The Champlain Robotics\' club website.">'; }
+  else { echo '<meta name="description" content="La site web du club de robotique de Champlain.">'; }
   ?>
-  <meta name="author" content="Jess Al Fahad">
+  <meta name="author" content="Champlain Robotics">
   <title><?php 
     if(!$isFrench) { echo $pageTitle, " - CRC Robotics 2022"; }
     else { echo $pageTitle, " - CRC Robotique 2022"; }
@@ -99,13 +99,8 @@
             </a>
           </div>
         </div>-->
-        <a href="contact" class="navbar-item ';
-        if ($active == 4) { echo "active"; }
-        echo '">
-          Contact
-        </a>
         <a href="media" class="navbar-item ';
-        if ($active == 5) { echo "active"; }
+        if ($active == 4) { echo "active"; }
         echo '">
           Media
         </a>
@@ -191,13 +186,8 @@
             </a>
           </div>
         </div>-->
-        <a href="contact" class="navbar-item ';
-        if ($active == 4) { echo "active"; }
-        echo '">
-          Contact
-        </a>
         <a href="media" class="navbar-item ';
-        if ($active == 5) { echo "active"; }
+        if ($active == 4) { echo "active"; }
         echo '">
           Media
         </a>
@@ -256,11 +246,6 @@
         echo '">
           &Eacute;quipe
         </a>
-        <a href="contacte" class="navbar-item ';
-        if ($active == 4) { echo "active"; }
-        echo '">
-          Contact
-        </a>
         <a href="media" class="navbar-item ';
         if ($active == 4) { echo "active"; }
         echo '">
@@ -313,11 +298,6 @@
         if ($active == 3) { echo "active"; }
         echo '">
           &Eacute;quipe
-        </a>
-        <a href="contacte" class="navbar-item ';
-        if ($active == 4) { echo "active"; }
-        echo '">
-          Contact
         </a>
         <a href="media" class="navbar-item ';
         if ($active == 4) { echo "active"; }

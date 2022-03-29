@@ -19,7 +19,7 @@ require 'layouts/header.php'; ?>
 
 <main class="content-area fadeInUp show">
   <div class="columns">
-    <div class="column is-three-quarters">
+    <div class="column is-full">
       <div class="content">
         <h1>The Champlain Robotics Club</h1>
         <hr>
@@ -34,61 +34,6 @@ require 'layouts/header.php'; ?>
           competition.
           <br>
         </p>
-      </div>
-    </div>
-    <div class="column is-one-quarter">
-      <div class="content">
-        <img width="auto" height="auto" alt="an image" src="http://www.crhsrobotics.com/2019/assets/team_2014.jpg">
-      </div>
-    </div>
-  </div>
-</main>
-<main class="content-area fadeInUp">
-  <div class="columns">
-    <div class="column is-full">
-      <div class="content">
-        <h1>What we accomplished</h1>
-        <hr>
-      </div>
-    </div>
-  </div>
-  <div class="columns">
-    <div class="column is-three-quarters">
-      <div class="content">
-        <h3>
-          Our past team (not actually though).
-        </h3>
-        <p>Hello there</p>
-      </div>
-    </div>
-    <div class="column is-one-quarter">
-      <div class="content">
-        <img width="auto" height="auto" alt="an image" src="http://www.crhsrobotics.com/2019/assets/team_2014.jpg">
-      </div>
-    </div>
-  </div>
-</main>
-<main class="content-area fadeInUp">
-  <div class="columns">
-    <div class="column is-full">
-      <div class="content">
-        <h1>Our future</h1>
-        <hr>
-      </div>
-    </div>
-  </div>
-  <div class="columns">
-    <div class="column is-three-quarters">
-      <div class="content">
-        <h3>
-          Our past team (not actually though).
-        </h3>
-        <p>Hello there</p>
-      </div>
-    </div>
-    <div class="column is-one-quarter">
-      <div class="content">
-        <img width="auto" height="auto" alt="an image" src="http://www.crhsrobotics.com/2019/assets/team_2014.jpg">
       </div>
     </div>
   </div>

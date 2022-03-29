@@ -17,23 +17,6 @@ require 'layouts/header.php'; ?>
 -->
     </div>
   </div>
-  <div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
-      <div class="container">
-        <ul>
-          <li class="is-active">
-            <a class="tab-btn" data-target="0">Our school</a>
-          </li>
-          <li>
-            <a class="tab-btn" data-target="1">Our robot</a>
-          </li>
-          <li>
-            <a class="tab-btn" data-target="2">Our team</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
 </section>
 
 <main class="content-area fadeInUp show">
@@ -80,59 +63,6 @@ require 'layouts/header.php'; ?>
     </div>
   </div>
 </main>
-<main class="content-area fadeInUp">
-  <div class="columns">
-    <div class="column is-full">
-      <div class="content">
-        <h1>Our robot</h1>
-        <hr>
-      </div>
-    </div>
-  </div>
-  <div class="columns">
-    <div class="column is-two-thirds">
-      <div class="content">
-        <h3>
-          First phase
-        </h3>
-        <p>
-        With the club coming together to brainstorm some ideas, the vision of our robot begins to take shape. This year, our team struggled to get access to space and resources to begin prototyping due to the COVID-19 pandemic, but after CEGEPs came back into session after the winter break we launched ourselves into it.
-        </p>
-      </div>
-    </div>
-    <div class="column is-one-third">
-      <div class="content">
-        <img width="auto" height="auto" alt="an image" src="assets/robot_planning_1.jpg">
-      </div>
-    </div>
-  </div>
-</main>
-<main class="content-area fadeInUp">
-  <div class="columns">
-    <div class="column is-full">
-      <div class="content">
-        <h1>Our team</h1>
-        <hr>
-      </div>
-    </div>
-  </div>
-  <div class="columns">
-    <div class="column is-three-quarters">
-      <div class="content">
-        <h3>
-          Our past team (not actually though).
-        </h3>
-        <p>Hello there</p>
-      </div>
-    </div>
-    <div class="column is-one-quarter">
-      <div class="content">
-        <img width="auto" height="auto" alt="an image" src="http://www.crhsrobotics.com/2019/assets/team_2014.jpg">
-      </div>
-    </div>
-  </div>
-</main>
-
 
 <?php
 /*
