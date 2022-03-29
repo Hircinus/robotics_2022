@@ -77,7 +77,7 @@ require 'layouts/header.php'; ?>
       $imgPath = "assets/member/elessia.jpg";
       $name = "Elessia";
       $years = "Robot team";
-      $content = "I first started robotics 2 years ago… When I was introduced I knew nothing. Now, due to the amazing people I met, I learnt so much and made so many memories. Robotics isn’t just about building and programming, it’s about having fun with the family we built!
+      $content = "I first started robotics 2 years agoï¿½ When I was introduced I knew nothing. Now, due to the amazing people I met, I learnt so much and made so many memories. Robotics isnï¿½t just about building and programming, itï¿½s about having fun with the family we built!
       I am now the treasurer of robotics, anything having to do with money just come see me!";
       require 'layouts/card.php';
       ?>
@@ -136,7 +136,7 @@ require 'layouts/header.php'; ?>
     <div class="column is-one-quarter">
       <?php
       $imgPath = "assets/member/anon.png";
-      $name = "Jess Al Fahad";
+      $name = "Jessica Al Fahad";
       $years = "Web/journalism team";
       $content = "&amp;#115; &amp;#117; &amp;#115;";
       require 'layouts/card.php';
