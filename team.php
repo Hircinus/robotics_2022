@@ -109,7 +109,7 @@ require 'layouts/header.php'; ?>
       $imgPath = "assets/member/cece.jpeg";
       $name = "Cece";
       $years = "Kiosk team";
-      $content = ":$";
+      $content = "I'm a lot louder than I realize according to my friends and the team. (my friends are the team ;(). I am a big ball of fire and energy.If you haven't realized IM A LESSSBIAAAANNNNNN";
       require 'layouts/card.php';
       ?>
     </div>
@@ -127,7 +127,7 @@ require 'layouts/header.php'; ?>
       $imgPath = "assets/member/anon.png";
       $name = "Breanna";
       $years = "Kiosk team";
-      $content = "...";
+      $content = "When I first started my academic college life, I never considered joining the robotics club. However, upon meeting the members and understanding all that really goes into robotics, I decided to try my hand at it. I've found myself getting out of my comfort zone on multiple occasions and I've developed different skills that I'll be carrying with me in my future endeavors!(By the way, I was forced into this by my buddyyy)";
       require 'layouts/card.php';
       ?>
     </div>
