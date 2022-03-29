@@ -94,9 +94,21 @@ require 'layouts/header.php'; ?>
       <div class="content">
         <h3>
           First phase
+        
+        <!--Première phase. -->
+        
         </h3>
         <p>
-        With the club coming together to brainstorm some ideas, the vision of our robot begins to take shape. This year, our team struggled to get access to space and resources to begin prototyping due to the COVID-19 pandemic, but after CEGEPs came back into session after the winter break we launched ourselves into it.
+        With the club coming together to brainstorm some ideas, the vision of our robot begins to take shape. 
+        This year, our team struggled to get access to space and resources to begin prototyping due to the 
+        COVID-19 pandemic, but after CEGEPs came back into session after the winter break we launched ourselves into it.
+        
+        <!--
+        Première phase. Avec le club qui se réunit pour réfléchir à quelques idées, la vision de notre robot 
+        commence à prendre forme. Cette année, notre équipe a eu du mal à avoir accès à l’espace et aux ressources 
+        pour commencer le prototypage en raison de la pandémie de COVID-19, mais après le retour des cégeps en session 
+        après la pause hivernale, nous nous sommes lancés dans ce domaine.
+        -->
         </p>
       </div>
     </div>
