@@ -7,10 +7,10 @@ let navbarDropdowns = document.getElementsByClassName('navbar-dropdown');
 let navbarLinks = document.getElementsByClassName('navbar-link');
 let cardContents = document.getElementsByClassName("card-content");
 // For hamburger menu button on smaller screens (width < 1024px)
-navbarToggle.addEventListener('click', function() {
+function toggleNav() {
   navbarToggle.classList.toggle("is-active");
   navbarMenu.classList.toggle("is-active");
-});
+}
 // For dropdown menus within the navbar, any screen size
 navbarToggles.forEach(el => {
   el.addEventListener('click', () => {
@@ -129,35 +129,21 @@ function checkWindowHash() {
   }
 }
 
-// Dark mode handling - DEPRECATED
-/*
-var darkModeBtn = document.getElementById('darkMode');
-var mainStyle = document.getElementById('main-style');
-darkModeBtn.addEventListener('click', function() {
-  if (!getCookie('darkMode') || getCookie('darkMode') == 0) {
-    document.cookie = "darkMode=1";
-    mainStyle.href = "assets/bulma-dark.css";
-  }
-  else {
-    document.cookie = "darkMode=0";
-    mainStyle.href = "assets/bulma.css";
-  }
-});
-// check cookie onload()
-function checkCookie(cname) {
-  if (getCookie('darkMode') == 1) {
-    mainStyle.href = "assets/bulma-dark.css";
-  }
-  else {}
-}
-*/
-
 window.onscroll = function() {scrollFunction()};
-
+let nav = document.getElementById("nav");
+let limit = 100;
+let lastScrollTop = 100;
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > limit || document.documentElement.scrollTop > limit) {
     document.getElementById("backTop").classList.add("show");
   } else {
     document.getElementById("backTop").classList.remove("show");
   }
+  var x = window.pageYOffset || document.documentElement.scrollTop;
+  if (x > lastScrollTop || x <= limit) {
+      nav.classList.remove("show");
+  } else {
+      nav.classList.add("show");
+  }
+  lastScrollTop = x <= 0 ? 0 : x;
 }

@@ -1,5 +1,10 @@
 <?php 
   $filePath = explode("/", $_SERVER['REQUEST_URI']);
+  $hashParts = explode("#", $_SERVER['REQUEST_URI']);
+  $hashLink = "";
+  if($hashParts[1]) {
+    $hashLink = $hashParts[1];
+  }
   $pathPrefix;
   if($filePath[2] == "fr") {
     $isFrench = true;
@@ -29,20 +34,21 @@
 <body>
   <?php
   if(!$isFrench) {
-    echo '<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand bounceIn">
+    echo '
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
       <a class="navbar-item" href="home">
         <img src="assets/logo.png">
       </a>
   
-      <a role="button" class="navbar-burger" id="navbar-toggle" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
   
-    <div id="navbar-menu" class="navbar-menu">
+    <div class="navbar-menu">
       <div class="navbar-start">
         <a href="home" class="navbar-item ';
          if ($active == 0) { echo "active"; }
@@ -59,6 +65,11 @@
         echo '">
           The competition
         </a>
+        <a href="team" class="navbar-item ';
+        if ($active == 3) { echo "active"; }
+        echo '">
+          Team
+        </a><!--
         <div id="dropdownBox" class="navbar-item has-dropdown ';
         if ($active == 3) { echo "active"; }
         echo '" data-target="0">
@@ -87,31 +98,109 @@
               Mentors & mentions
             </a>
           </div>
-        </div>
+        </div>-->
         <a href="contact" class="navbar-item ';
         if ($active == 4) { echo "active"; }
         echo '">
           Contact
         </a>
-        <div id="dropdownBox" class="navbar-item has-dropdown ';
+        <a href="media" class="navbar-item ';
         if ($active == 5) { echo "active"; }
+        echo '">
+          Media
+        </a>
+      </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a href="', "fr/", $pageFr, '" class="button is-light">
+              Fran&ccedil;ais
+            </a>
+            <!--
+            <a id="darkMode" class="button is-dark">
+              <i class="far fa-moon"></i>
+            </a>
+            -->
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <nav id="nav" class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="home">
+        <img src="assets/logo.png">
+      </a>
+  
+      <a role="button" onclick="toggleNav()" class="navbar-burger" id="navbar-toggle" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbar-menu" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="home" class="navbar-item ';
+         if ($active == 0) { echo "active"; }
+         echo '">
+          Home
+        </a>
+        <a href="about" class="navbar-item ';
+        if ($active == 1) { echo "active"; }
+        echo '">
+          About us
+        </a>
+        <a href="crc" class="navbar-item ';
+        if ($active == 2) { echo "active"; }
+        echo '">
+          The competition
+        </a>
+        <a href="team" class="navbar-item ';
+        if ($active == 3) { echo "active"; }
+        echo '">
+          Team
+        </a><!--
+        <div id="dropdownBox" class="navbar-item has-dropdown ';
+        if ($active == 3) { echo "active"; }
         echo '" data-target="0">
           <a class="navbar-link">
-            Media
+            Team
           </a>
   
           <div class="navbar-dropdown">
-            <a href="media#presentation" class="navbar-item checkHash">
-              Presentation
+            <a href="team#robot" class="navbar-item checkHash">
+              Robot team
             </a>
-            <a href="media#tutorials" class="navbar-item checkHash">
-              Tutorials
+            <a href="team#programming" class="navbar-item checkHash">
+              Programming team
             </a>
-            <a href="media#gallery" class="navbar-item checkHash">
-              Gallery
+            <a href="team#kiosk" class="navbar-item checkHash">
+              Kiosk Team
+            </a>
+            <a href="team#web" class="navbar-item checkHash">
+              Webjournalism team
+            </a>
+            <a href="team#video" class="navbar-item checkHash">
+              Video team
+            </a>
+            <hr class="navbar-divider">
+            <a href="team#mentor" class="navbar-item checkHash">
+              Mentors & mentions
             </a>
           </div>
-        </div>
+        </div>-->
+        <a href="contact" class="navbar-item ';
+        if ($active == 4) { echo "active"; }
+        echo '">
+          Contact
+        </a>
+        <a href="media" class="navbar-item ';
+        if ($active == 5) { echo "active"; }
+        echo '">
+          Media
+        </a>
       </div>
       </div>
       <div class="navbar-end">
@@ -131,13 +220,72 @@
       </div>
     </nav>';
   } else {
-    echo '<nav class="navbar" role="navigation" aria-label="main navigation">
+    echo '
+    <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand bounceIn">
       <a class="navbar-item" href="accueil">
         <img src="../assets/logo.png">
       </a>
   
-      <a role="button" class="navbar-burger" id="navbar-toggle" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a href="accueil" class="navbar-item ';
+         if ($active == 0) { echo "active"; }
+         echo '">
+          Accueil
+        </a>
+        <a href="a_propos" class="navbar-item ';
+        if ($active == 1) { echo "active"; }
+        echo '">
+          &Agrave; propos
+        </a>
+        <a href="crc" class="navbar-item ';
+        if ($active == 2) { echo "active"; }
+        echo '">
+          Le concours
+        </a>
+        <a href="equipe" class="navbar-item ';
+        if ($active == 3) { echo "active"; }
+        echo '">
+          &Eacute;quipe
+        </a>
+        <a href="contacte" class="navbar-item ';
+        if ($active == 4) { echo "active"; }
+        echo '">
+          Contact
+        </a>
+        <a href="media" class="navbar-item ';
+        if ($active == 4) { echo "active"; }
+        echo '">
+          M&eacute;dia
+        </a>
+      </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a href="', "../", $pageEn, '" class="button is-light">
+              English
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <nav id="nav" class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand bounceIn">
+      <a class="navbar-item" href="accueil">
+        <img src="../assets/logo.png">
+      </a>
+  
+      <a role="button" onclick="toggleNav()" class="navbar-burger" id="navbar-toggle" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -161,59 +309,21 @@
         echo '">
           Le concours
         </a>
-        <div id="dropdownBox" class="navbar-item has-dropdown ';
+        <a href="equipe" class="navbar-item ';
         if ($active == 3) { echo "active"; }
-        echo '" data-target="0">
-          <a class="navbar-link">
-            &Eacute;quipe
-          </a>
-  
-          <div class="navbar-dropdown">
-            <a href="equipe#robot" class="navbar-item checkHash">
-              Robot
-            </a>
-            <a href="equipe#programming" class="navbar-item checkHash">
-              Programming
-            </a>
-            <a href="equipe#kiosque" class="navbar-item checkHash">
-              Kiosque
-            </a>
-            <a href="equipe#web" class="navbar-item checkHash">
-              Webjournalisme
-            </a>
-            <a href="equipe#video" class="navbar-item checkHash">
-              Vid&eacute;o
-            </a>
-            <hr class="navbar-divider">
-            <a href="equipe#tuteur" class="navbar-item checkHash">
-              Tuteurs & mentions
-            </a>
-          </div>
-        </div>
+        echo '">
+          &Eacute;quipe
+        </a>
         <a href="contacte" class="navbar-item ';
         if ($active == 4) { echo "active"; }
         echo '">
           Contact
         </a>
-        <div id="dropdownBox" class="navbar-item has-dropdown ';
-        if ($active == 5) { echo "active"; }
-        echo '" data-target="0">
-          <a class="navbar-link">
-            M&eacute;dia
-          </a>
-  
-          <div class="navbar-dropdown">
-            <a href="media#presentation" class="navbar-item checkHash">
-              Pr&eacute;sentation
-            </a>
-            <a href="media#tutoriels" class="navbar-item checkHash">
-              Tutoriels
-            </a>
-            <a href="media#gallerie" class="navbar-item checkHash">
-              Gallerie
-            </a>
-          </div>
-        </div>
+        <a href="media" class="navbar-item ';
+        if ($active == 4) { echo "active"; }
+        echo '">
+          M&eacute;dia
+        </a>
       </div>
       </div>
       <div class="navbar-end">
