@@ -65,8 +65,13 @@
         echo '">
           The competition
         </a>
-        <a href="team" class="navbar-item ';
+        <a href="robot" class="navbar-item ';
         if ($active == 3) { echo "active"; }
+        echo '">
+          Our robot
+        </a>
+        <a href="team" class="navbar-item ';
+        if ($active == 4) { echo "active"; }
         echo '">
           Team
         </a><!--
@@ -100,7 +105,7 @@
           </div>
         </div>-->
         <a href="media" class="navbar-item ';
-        if ($active == 4) { echo "active"; }
+        if ($active == 5) { echo "active"; }
         echo '">
           Media
         </a>
@@ -152,8 +157,13 @@
         echo '">
           The competition
         </a>
-        <a href="team" class="navbar-item ';
+        <a href="robot" class="navbar-item ';
         if ($active == 3) { echo "active"; }
+        echo '">
+          Our robot
+        </a>
+        <a href="team" class="navbar-item ';
+        if ($active == 4) { echo "active"; }
         echo '">
           Team
         </a><!--
@@ -187,7 +197,7 @@
           </div>
         </div>-->
         <a href="media" class="navbar-item ';
-        if ($active == 4) { echo "active"; }
+        if ($active == 5) { echo "active"; }
         echo '">
           Media
         </a>
@@ -241,13 +251,18 @@
         echo '">
           Le concours
         </a>
-        <a href="equipe" class="navbar-item ';
+        <a href="robot" class="navbar-item ';
         if ($active == 3) { echo "active"; }
+        echo '">
+          Notre robot
+        </a>
+        <a href="equipe" class="navbar-item ';
+        if ($active == 4) { echo "active"; }
         echo '">
           &Eacute;quipe
         </a>
         <a href="media" class="navbar-item ';
-        if ($active == 4) { echo "active"; }
+        if ($active == 5) { echo "active"; }
         echo '">
           M&eacute;dia
         </a>
@@ -294,13 +309,18 @@
         echo '">
           Le concours
         </a>
-        <a href="equipe" class="navbar-item ';
+        <a href="robot" class="navbar-item ';
         if ($active == 3) { echo "active"; }
+        echo '">
+          Notre robot
+        </a>
+        <a href="equipe" class="navbar-item ';
+        if ($active == 4) { echo "active"; }
         echo '">
           &Eacute;quipe
         </a>
         <a href="media" class="navbar-item ';
-        if ($active == 4) { echo "active"; }
+        if ($active == 5) { echo "active"; }
         echo '">
           M&eacute;dia
         </a>

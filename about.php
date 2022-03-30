@@ -23,8 +23,7 @@ require 'layouts/header.php'; ?>
   <div class="columns">
     <div class="column is-full">
       <div class="content">
-        <h1>Champlain College Saint-Lambert</h1>
-        <h3 class="subtitle">A campus of Champlain Regional College</h3>
+        <h1>Our school</h1>
         <hr>
       </div>
     </div>
@@ -62,40 +61,37 @@ require 'layouts/header.php'; ?>
       </div>
     </div>
   </div>
+  <div class="columns">
+    <div class="column is-full">
+      <div class="content">
+        <h1>Our experience</h1>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column is-full">
+      <div class="content">
+        <p>
+        The team learned how to support each other in order to cover each others' weaknesses. As we encountered difficulties, we learned to think outside of the box and approach 
+        challenges from different angles.
+        <br>
+        During the preparation for the competition, the team enjoyed working together and creating memories that'll we'll be able to carry with us long after we have graduated. 
+        We enjoyed pushing ourselves out of our comfort zones and testing our own limits. Considering we haven't had much experience and that many of us have only just started 
+        contributing to robotics, we faced many challenges, such as balancing club work with school work. This was especially difficult during our midterm and final exams. 
+        <br>
+        Our biggest challenge had to do with wiring the robot. We overall managed to succeed, learn from our mistakes, and enjoy the process of improving on our skills and 
+        furthering our knowledge. Some of the biggest sacrifices we made also had to do with time consumption. We found ourselves giving any little spaces of time we had to spare 
+        towards the club and the work that needed to be done. We spent late nights after school every week, staying as late as 10 p.m. just to try to give it everything we had. 
+        <br>
+        Our March break was dedicated to robotics and many of us showed up everyday just to work even more. Being full-time students and, some of us, part-time workers, it was 
+        increasingly difficult to give up all this time, but we found it incredibly rewarding as our efforts have been paying off.
+      </p>
+      </div>
+    </div>
+  </div>
 </main>
 
 <?php
-/*
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "mysql";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
- die("Connection failed: " . $conn->connect_error);
-}
-/*
-$sql = "INSERT INTO MyGuests(firstname,lastname,email)
-VALUES('Duncan', 'B-H', 'j.alfahad@gmail.com');";
-
-$sql = "SELECT email FROM MyGuests";
-if ($result = $conn -> query($sql)) {
-  while ($row = $result -> fetch_row()) {
-    echo $row[0], ", ";
-  }
-  $result -> free_result();
-}
-/*
-
-if ($conn->query($sql) === TRUE) {
- echo "Table MyGuests created successfully";
-} else {
- echo "Error creating table: " . $conn->error;
-}
-
-$conn->close();*/
 require 'layouts/footer.php';
 ?>

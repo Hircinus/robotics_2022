@@ -1,7 +1,7 @@
 <?php
 $pageFr = 'equipe';
 $pageTitle = 'Team';
-$active = 3;
+$active = 4;
 require 'layouts/header.php'; ?>
 
 <section class="hero is-link has-text-left">
